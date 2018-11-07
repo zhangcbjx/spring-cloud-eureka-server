@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @ClassName: SpringStart   
@@ -16,6 +17,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Copyright: 2018 www.yunqi.com Inc. All rights reserved.
  */
 @SpringBootApplication
+@EnableEurekaServer //创建服务注册中心
 public class SpringStart {
 	private static Logger log = LoggerFactory.getLogger(SpringStart.class);
 	/**

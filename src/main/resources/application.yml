@@ -1,2 +1,13 @@
 server:
   port: 9000
+
+application:
+  name: fileServer-01
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

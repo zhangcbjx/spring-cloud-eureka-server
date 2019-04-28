@@ -34,6 +34,7 @@ public class HelloAgent {
 				}
 			}
 		});
+		thread.setDaemon(false);
 		thread.start();
 	}
 }
